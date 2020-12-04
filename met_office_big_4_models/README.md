@@ -3,7 +3,7 @@
 A datasets of output from the UK Met Offices main weather forecasting (atmospheric) models.
 
 ## License
-See [LICENSE.txt](LICENSE.txt).
+See [LICENCE.txt](LICENCE.txt).
 
 ## Models
 
