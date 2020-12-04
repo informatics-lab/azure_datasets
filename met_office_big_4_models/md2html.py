@@ -1,7 +1,7 @@
 from markdown import markdown
 import sys
 import argparse
-
+import datetime
 
 parser = argparse.ArgumentParser(description='Convert markdown file to html.')
 parser.add_argument('--title', dest='title', required=True,
@@ -24,6 +24,7 @@ head = f"""
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
 </head>
 <body class="markdown-body">
+<p style="font-size:70%">Created at: {datetime.datetime.now().isoformat()}</p>
 """
 body = markdown(md_txt)
 foot = "</body></html>"
