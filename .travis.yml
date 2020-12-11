@@ -15,4 +15,4 @@ deploy:
     skip_cleanup: true
     script: bash $TRAVIS_BUILD_DIR/scripts/deploy.sh --deploy
     on:
-      branch: master
+      branch: main
