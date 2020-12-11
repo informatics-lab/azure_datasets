@@ -6,6 +6,7 @@ python:
 
 install:
   - "$TRAVIS_BUILD_DIR/scripts/setup.sh"
+  - "curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
 
 script:
   - echo "skipping tests"
