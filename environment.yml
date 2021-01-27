@@ -1,0 +1,6 @@
+name: intake_informaticslab
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - iris
