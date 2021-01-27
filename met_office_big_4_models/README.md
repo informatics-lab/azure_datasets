@@ -1,26 +1,26 @@
 # Met Office atmospheric model data sets
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/informatics-lab/azure_datasets/HEAD?urlpath=%2Flab%2Ftree%2Fmet_office_big_4_models%2Fexamples%2FIntroduction.ipynb)
 
-A datasets of output from the UK Met Offices main weather forecasting (atmospheric) models.
+Datasets of outputs from the UK Met Office's main weather forecasting (atmospheric) models.
 
-## License
+## Licence
 See [LICENCE.txt](LICENCE.txt).
 
 ## Models
 
 The available models are:
 
-* **MOGREPS-UK** - a high resolution atmospheric ensembles model for the UK.
+* **MOGREPS-UK** - a high resolution ensemble atmospheric model for the UK.
 * **UK-V** - a high resolution deterministic atmospheric model for the UK.
-* **MOGREPS-G** - a global atmospheric ensembles model.
-* **Global** -  a global atmospheric model.
+* **MOGREPS-G** - a global ensemble atmospheric model.
+* **Global** -  a global deterministic atmospheric model.
 
 For further details on the models see [Numerical weather prediction models
  on the Met Office Website](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting).
 
 ## Parameters / variables
 
-The parameters available in this dataset are listed below. Not all parameters me be available for all models.
+The parameters available in this dataset are listed below. Not all parameters may be available for all models.
 
 See [Discover our data on the Met Office website](https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/discovery) for details about the specific parameters. **Note `PT01H` means taken over a period of one hour rather than an instantaneous value**
 
@@ -58,21 +58,21 @@ The files (objects/blobs in the blob store) follow a strict naming convention th
 
 Each filename follow the format:
 
-`{model}/{model_start}/{validity_time}-{forecast_step}-{diagnostic_name}.nc`
+`{model}/{model_start}/{validity_time}-{forecast_period}-{diagnostic_name}.nc`
 
 Where `model` is one of: 
 
 * `mo-atmospheric-mogreps-g`
 * `mo-atmospheric-mogreps-uk`
 * `mo-atmospheric-ukv`
-* `mo-atmospheric-ukg`
+* `mo-atmospheric-global`
 
 For example where:
 
 * `model` = MOGREPS-G = `mo-atmospheric-mogreps-g`
-* `model_start` = the first time step in the model. E.g. 6pm on 01/12/2020 = `20201201T1800Z`
-* `validity_time` = the date time it is a forecast for. E.g. 6pm the next day (02/12/2020) = `20201202T1800Z`
-* `forecast_step` = the time period from the `model_start` of the forecast. The `model_start` + `forecast_step` should equal the `validity_time`. E.g. 24h after the model start = `PT0024H00M`
+* `model_start` = the first time step in the model. E.g. 18:00 on 2020-12-01 = `20201201T1800Z`
+* `validity_time` = the date time it is a forecast for. E.g. 18:00 the next day (2020-12-02) = `20201202T1800Z`
+* `forecast_period` = the time period from the `model_start` of the forecast. The `model_start` + `forecast_period` should equal the `validity_time`. E.g. 24hours after the model start = `PT0024H00M`
 * `diagnostic_name` = the parameter/variable/phenomena of interest. Should be from the list above. E.g. surface temperature = `temperature_at_surface`
 
 would give you the filename:
