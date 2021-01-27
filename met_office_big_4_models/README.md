@@ -1,5 +1,5 @@
 # Met Office atmospheric model data sets
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/informatics-lab/azure_datasets/HEAD?urlpath=%2Flab%2Ftree%2Fbinder%2FIntroduction.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/informatics-lab/azure_datasets/HEAD?urlpath=%2Flab%2Ftree%2Fmet_office_big_4_models%2Fexamples%2FIntroduction.ipynb)
 
 A datasets of output from the UK Met Offices main weather forecasting (atmospheric) models.
 
@@ -81,3 +81,5 @@ would give you the filename:
 
 ## Examples
 
+See the [examples](examples)folder or [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/informatics-lab/azure_datasets/HEAD?urlpath=%2Flab%2Ftree%2Fmet_office_big_4_models%2Fexamples%2FIntroduction.ipynb).
+ 
