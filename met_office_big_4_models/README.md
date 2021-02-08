@@ -18,6 +18,13 @@ The available models are:
 For further details on the models see [Numerical weather prediction models
  on the Met Office Website](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting).
 
+### Temporal range
+
+This data set is continously updated with the latest data from the Met Office, but on a 24 hour delay. Additonally models take a finite amount of time to run between 1 and 6 hours. Taken together this means the most resent data avaliable with be `now() - 24h - [0,6]h`.
+
+Older data from this dataset will be removed as and when needed for storage considerations however a minimum of 30 days of data will be kept. The first entry into this dataset was on  `2020/11/26 0800Z` so the oldest avaliable data will be *at least* `now() -30d` or `2020/11/26 0800Z` which ever is more recent. 
+ 
+
 ## Parameters / variables
 
 The parameters available in this dataset are listed below. Not all parameters may be available for all models.
