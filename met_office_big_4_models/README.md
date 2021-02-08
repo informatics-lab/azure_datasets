@@ -1,4 +1,5 @@
 # Met Office atmospheric model data sets
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/informatics-lab/azure_datasets/HEAD?urlpath=%2Flab%2Ftree%2Fmet_office_big_4_models%2Fexamples%2FIntroduction.ipynb)
 
 Datasets of outputs from the UK Met Office's main weather forecasting (atmospheric) models.
 
@@ -77,3 +78,8 @@ For example where:
 would give you the filename:
 
 `mo-atmospheric-mogreps-g/20201201T1800Z/20201202T1800Z-PT0024H00M-temperature_at_surface.nc`
+
+## Examples
+
+See the [examples](examples)folder or [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/informatics-lab/azure_datasets/HEAD?urlpath=%2Flab%2Ftree%2Fmet_office_big_4_models%2Fexamples%2FIntroduction.ipynb).
+ 
